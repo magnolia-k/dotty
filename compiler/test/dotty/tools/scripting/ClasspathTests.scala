@@ -44,6 +44,7 @@ class ClasspathTests:
       }
       val bytes = (lines.mkString("\n")+"\n").getBytes
       Files.write(scriptCopy, bytes)
+      scriptCopy.toFile.setExecutable(true)
 
     scriptCopy
 
